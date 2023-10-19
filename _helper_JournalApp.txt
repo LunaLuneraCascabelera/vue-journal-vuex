@@ -1,0 +1,39 @@
+
+# cd "C:\Users\lenny\Desktop\_CURSO VUE"
+	> Manually select features
+	> Check the features needed for your project:
+		(*) Babel
+		(*) Router
+		(*) Linter
+	> Choose a version
+		3.x
+	>  Use history mode for router? (Require.....)  n
+	>  ESLint with error prevention only
+	>  Pick aditional ...
+		(*) Lint on save
+	>  In dedicated ...
+		(*) In dedicated config files
+
+	> save this as a preset for future projects? (y/N)  N
+
+//Cambiamos el nombre a 07-journal-app y luego ponemos:
+ # cd journal
+ # npm run serve
+
+//Para instalar sass en nuestra aplicacion
+# npm install bootstrap@5.3.2
+	-> hay que indicarle a nuestra app que va a leer scss
+	# npm i/install -D sass-loader@10 sass
+	# npm run serve
+
+//Para instalar vuex
+# npm install vuex@next --save
+
+//luego crear las siguientes carpetas "store" en las siguientes rutas:
+		 /src/store  --> este es el store global de toda la aplicación
+		 /src/modules/daybook/store  -> este es el store de mi modulo "daybook"
+
+//ahora toca configurar el vuex 
+import store from './store'
+createApp(App)
+    .use(store)...
